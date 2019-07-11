@@ -7,10 +7,14 @@ public class Student extends Person{
     public Student(String name, int age) {
         super(name, age);
     }
+    public Student(String name, int age, int klass) {
+        super(name, age);
+        this.klass =klass;
+    }
 
     @Override
     public String introduce(){
-        return super.introduce();
+        return String.format("I am a Student. I am at Class %d.",klass);
     }
 
 
