@@ -7,6 +7,12 @@ public class Person {
         this.name = name;
         this.age = age;
     }
+
+    public String introduce(){
+        return String.format("My name is %s. I am %d years old.",name,age);
+    }
+
+
     public Person(){}
 
     public String getName() {
